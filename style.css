@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cor-de-fundo: #0e1014;
+  --cor-de-fundo-light: #ffffff;
+  --cor-principal: #ffffff;
+  --cor-secundaria: #9747ff;
+  --cor-hover: #8233e8;
+  --fonte-titulo: "Unbounded", sans-serif;
+  --fonte-texto: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  font-family: var(--fonte-texto);
+  color: var(--cor-principal);
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px 0;
+  margin: 50px 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 50px 10px;
+  gap: 40px;
+}
+
+h1 {
+  font-family: var(--fonte-titulo);
+  font-size: 64px;
+  text-align: center;
+}
+
+span {
+  color: var(--cor-secundaria);
+}
+
+p {
+  line-height: 1.5em;
+  text-align: center;
+  font-size: 32px;
+}
+
+a {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  border-radius: 36px;
+  margin: auto;
+  padding: 24px 48px;
+}
+
+a:hover {
+  background-color: var(--cor-hover);
+  box-shadow: 1px 1px 5px var(--cor-hover);
+}
+
+.imagem-celular {
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 1080px) {
+  section {
+    width: 35%;
+    margin: 50px auto;
+  }
+
+  .imagem-celular {
+    margin: auto;
+    width: 80%;
+  }
+
+  a {
+    width: 40%;
+  }
+}
